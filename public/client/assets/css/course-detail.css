@@ -1,0 +1,249 @@
+/* COURSE DETAIL CSS */
+
+.block_widget-3 {
+    background: #ffffff;
+    border: 1px solid #e6e6e6;
+}
+
+.widget-title {
+    color: #fff;
+    background: #f26820;
+    text-align: center;
+    padding: 15px 15px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.post-item {
+    padding-bottom: 10px;
+    width: 100%;
+}
+
+.post-inner {
+    border-bottom: 1px solid #efefef;
+    padding: 15px;
+    background: transparent;
+}
+
+.box-img {
+    height: auto;
+    overflow: hidden;
+    background-position: 50% 50%;
+    background-size: cover;
+    height: 18vh;
+}
+
+.box-img a img {
+    width: 100%;
+    height: 100%;
+}
+
+.box-text {
+    text-align: center;
+    padding: 12px 0px;
+}
+
+.box-text a {
+    color: #2b2b2b;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.main-box-course {
+    position: relative;
+    background: #fff;
+    padding: 0 15px 15px 15px;
+    margin-bottom: 20px;
+    border: 1.5px solid #ececec;
+}
+
+h3.entry-name-course {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    display: block;
+    font-size: 20px;
+    color: #07a787;
+    text-transform: uppercase;
+}
+
+.nav-btn-change {
+    padding: 20px 0px;
+}
+
+a.mentor-of-course {
+    font-size: 18px;
+    line-height: 35px;
+    color: #252525;
+}
+
+h4.price-of-course {
+    font-size: 16px;
+    line-height: 35px;
+    color: #ff1949;
+}
+
+a.btn-reg-learn {
+    position: absolute;
+    top: 35px;
+    right: 20px;
+    background-color: #64bd56;
+    border-color: rgba(0, 0, 0, .05);
+    text-align: center;
+    color: #ffffff;
+    padding: 10px 15px;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.nav-btn-change nav {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.nav-btn-change nav li {
+    padding: 15px 15px;
+    background: #efefef;
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    color: #07a787;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.nav-btn-change nav li:hover {
+    color: #252525;
+    padding: 15px 15px;
+    background: #ced4da;
+}
+
+#hide_Course1 {
+    display: block;
+}
+
+#hide_Course2 {
+    display: none;
+}
+
+#hide_Course3 {
+    display: none;
+}
+
+.tab-panels {
+    padding: 15px 15px;
+}
+
+.tab-panels p {
+    font-size: 16px;
+    line-height: 35px;
+    color: #333333;
+}
+
+.tab-panels h3 {
+    padding: 5px 0px;
+    font-size: 20px;
+}
+
+.tab-panels ul {
+    padding: 5px;
+}
+
+.tab-panels ul li {
+    list-style: square;
+    line-height: 25px;
+    margin-left: 30px;
+}
+
+/*  */
+
+.title-course-like {
+    margin: 35px 0px;
+}
+
+.title-course-like h3 {
+    color: #069d86;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 22px;
+}
+
+.carousel {
+    height: 400px;
+
+    margin: 5px 50px;
+}
+.flickity-viewport{
+    height: 100%;
+}
+.carousel-cell {
+    width: 33%;
+    height: auto;
+    padding: 0 10px;
+    border-radius: 5px;
+}
+.post3-column {
+    height: 100%;
+    padding: 10px;
+    background-color: #ffffff;
+    
+}
+.img-post3 a img {
+    width: 100%;
+    height: 180px;
+}
+.text-post3 {
+    padding: 10px 5px;
+}
+.text-post3 h3 {
+    color: #252525;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+.text-post3 p {
+    color: #333333;
+    font-size: 14px;
+    line-height: 22px;
+    height: 48px;
+    
+}
+
+/* cell number */
+
+/* smaller, dark, rounded square */
+
+.flickity-prev-next-button,
+.flickity-prev-next-button.previous {
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    background: #F90;
+}
+.flickity-prev-next-button:hover{
+    background: #F90;
+}
+/* arrow color */
+
+.flickity-prev-next-button .arrow {
+    fill: white;
+}
+
+.flickity-prev-next-button.no-svg {
+    color: white;
+}
+
+/* position outside */
+
+.flickity-prev-next-button.previous {
+    left: -40px;
+}
+
+.flickity-prev-next-button.next {
+    right: -40px;
+   
+}

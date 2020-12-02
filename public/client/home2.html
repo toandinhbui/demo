@@ -1,0 +1,1001 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- cdn bootstrap 4 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+    <!-- cdn fontawesome -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    
+        <!-- cdn google font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap"
+        rel="stylesheet">
+    <!-- cdn swiper -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!-- css custom -->
+    <link rel="stylesheet" href="assets/css/default.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/reponsive.css">
+    <title>Trang chủ</title>
+    <style>
+       
+    </style>
+</head>
+
+<body>
+    <!-- code star here -->
+    <div class="container-fluid">
+        <!-- hd-top -->
+        <div class="hd-top">
+            <div class="hd-top-grid">
+                <div class="hd-top__left">
+                    <div class="slogan">
+                        Website giới thiệu gia sư IT Online
+                    </div>
+                </div>
+                <div class="hd-top__right">
+                    <div class="user-btn">
+                        <a href="login-reg-to-student.html" ><i class="fa fa-user"></i> Đăng ký </a>
+                        <a href="login-reg-to-student.html" > <i class="fa fa-user"></i> Đăng nhập</a>
+                    </div>
+                    <!-- modal login-reg form -->
+  <!-- Modal -->
+  <!-- Modal -->
+
+                     <!-- modal login-reg form end-->
+                </div>
+            </div>
+        </div>
+        <!-- hd-top end -->
+        <!-- hd-area -->
+        <div class="hd-area">
+            <div class="hd-area-grid">
+                <div class="hd-area__left">
+                    <a class="logo">
+                        <img src="assets/img/logo/rsz_logo2.png" class="img-fluid" alt="">
+                </div>
+
+                <div class="hd-area__right">
+                    <!-- nav -->
+                    <nav class="navigation">
+                        <ul class="menu">
+                            <li> <a href="home.html" class=""> Trang chủ </a> </li>
+                            <li> <a href="course.html" class=""> Khóa học </a> </li>
+                            <li> <a href="mentor-list.html" class=""> Gia sư </a> </li>
+                            <li> <a href="blog.html" class=""> Tin tức </a> </li>
+                            <li> <a href="contact.html" class=""> Liên hệ </a> </li>
+                            <!-- search -->
+
+                            <!-- search end -->
+                        </ul>
+                        <div class="search">
+                            <button class="btn-drop" onclick="show()">
+                                <i class="fa fa-search" id="hide-icon" class="mystyle"></i>
+                            </button>
+                            <div id="show-content">
+                                <form action="" method="post" class="form-search">
+                                    <input type="text" class="import-search" placeholder="">
+                                    <button type="submit" class="icon-search">
+                                        <i class="fa fa-search"></i>
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                        
+                    </nav>
+                    <!-- nav end -->
+                </div>
+            </div>
+        </div>
+        <!-- hd-area end -->
+        <!-- hd-responsive -->
+        <div class="hd-reponsive">
+            <div class="hd-reponsive-grid">
+                <!-- tab-menu -->
+                <div class="tab-menu">
+                    <button class="repon-drop-search" onclick="openNav()">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                </div>
+                <!-- open nav content -->
+                <div class="show-nav-box" id="show_nav">
+                    <a href="" class="close-nav" onclick="closeNav()">
+                        <i class="fa fa-window-close"></i>
+                    </a>
+                    <ul class="menu-open-nav">
+                        <li><a href="home.html">Trang chủ</a></li>
+                        <li><a href="course.html">Khoá học</a></li>
+                        <li><a href="mentor-list.html">Gia sư</a></li>
+                        <li><a href="blog.html">Tin tức</a></li>
+                        <li><a href="contact.html">Liên hệ</a></li>
+                    </ul>
+                    <ul class="menu-open-user">
+                        <li> <a href="login-reg-to-student.html"> <i class="fa fa-user"></i> Đăng ký </a> </li>
+                        <li> <a href="login-reg-to-student.html"> <i class="fa fa-user"></i> Đăng nhập</a> </li>
+                    </ul>
+                </div>
+
+                <!-- open nav content end-->
+                <!-- tab-menu end -->
+                <!-- logo reponsive -->
+                <div class="reponsive-logo">
+                    <a href="home.html">
+                        <img src="assets/img/logo/rsz_logo2.png" class="img-fluid" alt="">
+                    </a>
+                </div>
+                <!-- logo reponsive -->
+                <!-- search-reponsive -->
+                <div class="search-reponsive">
+                    <button id="icon_show" onclick="showSearch()">
+                        <i class="fa fa-search"></i>
+                    </button>
+                    <div class="box-search-reponsive" id="showSearch_box">
+                        <form action="" method="post">
+                            <input type="text" class="input_showSearch" id="" placeholder="Từ khóa">
+                            <button type="submit" class="btn_showSearch">
+                                <svg width="16px" height="" viewBox="0 0 16 16" class="bi bi-search" fill="currentColor"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z" />
+                                    <path fill-rule="evenodd"
+                                        d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z" />
+                                </svg>
+                            </button>
+                            <div onclick="hideSearch_box()" class="hidesearch">
+                                <i class="fa fa-window-close"></i>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- search-reponsive end-->
+            </div>
+
+        </div>
+        <!-- hd-responsive end -->
+        <!-- slide -->
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <!-- slide text -->
+                    <div class="slide-text">
+                        <h2 class="slide-text-heading">
+                            Gia sư Online
+                        </h2>
+                        <h3 class="slide-text-content">
+                            Bạn đã sẵn sàng để học tập? Tìm một khóa học và tham gia với chúng tôi ngay hôm nay.
+                        </h3>
+                        <div class="slide-text-btn">
+                            <a href="" class="btn-slide"> Xem thêm </a>
+                            <a href="" class="btn-slide"> Đăng ký học </a>
+                        </div>
+                    </div>
+                    <!-- slide text end-->
+                    <img src="assets/img/slider/sl1.jpg" class="d-block w-100 img-fluid" alt="slide">
+                </div>
+                <div class="carousel-item">
+                    <!-- slide text -->
+                    <div class="slide-text">
+                        <h2 class="slide-text-heading">
+                            Gia sư Online
+                        </h2>
+                        <h3 class="slide-text-content">
+                            Bạn đã sẵn sàng để học tập? Tìm một khóa học và tham gia với chúng tôi ngay hôm nay.
+                        </h3>
+                        <div class="slide-text-btn">
+                            <a href="" class="btn-slide"> Xem thêm </a>
+                            <a href="" class="btn-slide"> Đăng ký học </a>
+                        </div>
+                    </div>
+                    <!-- slide text end-->
+                    <img src="assets/img/slider/sl2.jpg" class="d-block w-100 img-fluid" alt="slide">
+                </div>
+                <div class="carousel-item">
+                    <!-- slide text -->
+                    <div class="slide-text">
+                        <h2 class="slide-text-heading">
+                            Gia sư Online
+                        </h2>
+                        <h3 class="slide-text-content">
+                            Bạn đã sẵn sàng để học tập? Tìm một khóa học và tham gia với chúng tôi ngay hôm nay.
+                        </h3>
+                        <div class="slide-text-btn">
+                            <a href="" class="btn-slide"> Xem thêm </a>
+                            <a href="" class="btn-slide"> Đăng ký học </a>
+                        </div>
+                    </div>
+                    <!-- slide text end-->
+                    <img src="assets/img/slider/sl3.jpg" class="d-block w-100 img-fluid" alt="slide">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <!-- slide end -->
+        <!-- course -->
+        <div class="container mt-50">
+            <div class="ctv-course">
+                <!-- button change tabs -->
+                <nav class="btn-tabs-course">
+                    <li onclick="showCourse1()">Khóa học mới</li>
+                    <li onclick="showCourse2()">Khóa học nổi bật</li>
+                    <li><a href="course.html">Xem tất cả</a></li>
+                </nav>
+
+                <!-- button change tabs end -->
+
+                <div class="tabs-course-content mt-4">
+                    <div id="show-content1">
+                        <div class="row">
+                            <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3 ">
+                                <!-- course -->
+                                <div class="course">
+
+                                    <div class="img-course">
+                                        <a href="course-detail.html">
+                                            <img src="assets/img/course/courses-1.jpg" class="img-fluid w-100" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="course-content">
+                                        <h3 class="course-name">
+                                            Khóa học java
+                                        </h3>
+                                        <h4 class="course-type">
+                                            Back-end
+                                        </h4>
+                                        <hr class="hr-course">
+                                        <p class="course-detail">
+                                            Java được coi là ngôn ngữ lập trình số 1 hiện nay. Nó thường được nhắc đến
+                                            như
+                                            một ngôn ngữ lập trình bậc cao
+                                        </p>
+
+                                        <div class="entry-total_review">
+                                            <div class="total">
+                                                <i class="fa fa-users"></i>
+                                                <span class="number"> 1 </span> học sinh
+                                            </div>
+                                            <div class="review">
+                                                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-star"
+                                                    fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd"
+                                                        d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.523-3.356c.329-.314.158-.888-.283-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767l-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288l1.847-3.658 1.846 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.564.564 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z">
+                                                    </path>
+                                                </svg>
+                                                <span class="number">1</span> Đánh giá
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <!-- course end-->
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-lg-3  col-xl-3 ">
+                                <!-- course -->
+                                <div class="course">
+                                    <div class="img-course">
+                                        <a href="">
+                                            <img src="assets/img/course/courses-1.jpg" class="img-fluid w-100" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="course-content">
+                                        <h3 class="course-name">
+                                            Khóa học java
+                                        </h3>
+                                        <h4 class="course-type">
+                                            Back-end
+                                        </h4>
+                                        <hr class="hr-course">
+                                        <p class="course-detail">
+                                            Java được coi là ngôn ngữ lập trình số 1 hiện nay. Nó thường được nhắc đến
+                                            như
+                                            một ngôn ngữ lập trình bậc cao
+                                        </p>
+                                        <div class="entry-total_review">
+                                            <div class="total">
+                                                <i class="fa fa-users"></i>
+                                                <span class="number"> 1 </span> học sinh
+                                            </div>
+                                            <div class="review">
+                                                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-star"
+                                                    fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd"
+                                                        d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.523-3.356c.329-.314.158-.888-.283-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767l-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288l1.847-3.658 1.846 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.564.564 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z">
+                                                    </path>
+                                                </svg>
+                                                <span class="number">1</span> Đánh giá
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- course end-->
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-lg-3  col-xl-3 ">
+                                <!-- course -->
+                                <div class="course">
+                                    <div class="img-course">
+                                        <a href="">
+                                            <img src="assets/img/course/java.png" class="img-fluid w-100" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="course-content">
+                                        <h3 class="course-name">
+                                            Khóa học java
+                                        </h3>
+                                        <h4 class="course-type">
+                                            Back-end
+                                        </h4>
+                                        <hr class="hr-course">
+                                        <p class="course-detail">
+                                            Java được coi là ngôn ngữ lập trình số 1 hiện nay. Nó thường được nhắc đến
+                                            như
+                                            một ngôn ngữ lập trình bậc cao
+                                        </p>
+
+                                        <div class="entry-total_review">
+                                            <div class="total">
+                                                <i class="fa fa-users"></i>
+                                                <span class="number"> 1 </span> học sinh
+                                            </div>
+                                            <div class="review">
+                                                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-star"
+                                                    fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd"
+                                                        d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.523-3.356c.329-.314.158-.888-.283-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767l-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288l1.847-3.658 1.846 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.564.564 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z">
+                                                    </path>
+                                                </svg>
+                                                <span class="number">1</span> Đánh giá
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- course end-->
+                            </div>
+                            <div class="col-sm-12 col-md-6  col-lg-3 col-xl-3">
+                                <!-- course -->
+                                <div class="course">
+                                    <div class="img-course">
+                                        <a href="">
+                                            <img src="assets/img/course/courses-2.jpg" class="img-fluid w-100" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="course-content">
+                                        <h3 class="course-name">
+                                            Khóa học java
+                                        </h3>
+                                        <h4 class="course-type">
+                                            Back-end
+                                        </h4>
+                                        <hr class="hr-course">
+                                        <p class="course-detail">
+                                            Java được coi là ngôn ngữ lập trình số 1 hiện nay. Nó thường được nhắc đến
+                                            như
+                                            một ngôn ngữ lập trình bậc cao
+                                        </p>
+
+                                        <div class="entry-total_review">
+                                            <div class="total">
+                                                <i class="fa fa-users"></i>
+                                                <span class="number"> 1 </span> học sinh
+                                            </div>
+                                            <div class="review">
+                                                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-star"
+                                                    fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd"
+                                                        d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.523-3.356c.329-.314.158-.888-.283-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767l-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288l1.847-3.658 1.846 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.564.564 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z">
+                                                    </path>
+                                                </svg>
+                                                <span class="number">1</span> Đánh giá
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- course end-->
+                            </div>
+                        </div>
+                    </div>
+                    <div id="show-content2">
+                        <div class="row">
+                            <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3 ">
+                                <!-- course -->
+                                <div class="course">
+
+                                    <div class="img-course">
+                                        <a href="">
+                                            <img src="assets/img/course/courses-1.jpg" class="img-fluid w-100" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="course-content">
+                                        <h3 class="course-name">
+                                            Khóa học java 2
+                                        </h3>
+                                        <h4 class="course-type">
+                                            Back-end
+                                        </h4>
+                                        <hr class="hr-course">
+                                        <p class="course-detail">
+                                            Java được coi là ngôn ngữ lập trình số 1 hiện nay. Nó thường được nhắc đến
+                                            như
+                                            một ngôn ngữ lập trình bậc cao
+                                        </p>
+
+                                        <div class="entry-total_review">
+                                            <div class="total">
+                                                <i class="fa fa-users"></i>
+                                                <span class="number"> 1 </span> học sinh
+                                            </div>
+                                            <div class="review">
+                                                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-star"
+                                                    fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd"
+                                                        d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.523-3.356c.329-.314.158-.888-.283-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767l-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288l1.847-3.658 1.846 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.564.564 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z">
+                                                    </path>
+                                                </svg>
+                                                <span class="number">1</span> Đánh giá
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <!-- course end-->
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-lg-3  col-xl-3 ">
+                                <!-- course -->
+                                <div class="course">
+                                    <div class="img-course">
+                                        <a href="">
+                                            <img src="assets/img/course/courses-1.jpg" class="img-fluid w-100" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="course-content">
+                                        <h3 class="course-name">
+                                            Khóa học java
+                                        </h3>
+                                        <h4 class="course-type">
+                                            Back-end
+                                        </h4>
+                                        <hr class="hr-course">
+                                        <p class="course-detail">
+                                            Java được coi là ngôn ngữ lập trình số 1 hiện nay. Nó thường được nhắc đến
+                                            như
+                                            một ngôn ngữ lập trình bậc cao
+                                        </p>
+                                        <div class="entry-total_review">
+                                            <div class="total">
+                                                <i class="fa fa-users"></i>
+                                                <span class="number"> 1 </span> học sinh
+                                            </div>
+                                            <div class="review">
+                                                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-star"
+                                                    fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd"
+                                                        d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.523-3.356c.329-.314.158-.888-.283-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767l-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288l1.847-3.658 1.846 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.564.564 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z">
+                                                    </path>
+                                                </svg>
+                                                <span class="number">1</span> Đánh giá
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- course end-->
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-lg-3  col-xl-3 ">
+                                <!-- course -->
+                                <div class="course">
+                                    <div class="img-course">
+                                        <a href="">
+                                            <img src="assets/img/course/java.png" class="img-fluid w-100" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="course-content">
+                                        <h3 class="course-name">
+                                            Khóa học java
+                                        </h3>
+                                        <h4 class="course-type">
+                                            Back-end
+                                        </h4>
+                                        <hr class="hr-course">
+                                        <p class="course-detail">
+                                            Java được coi là ngôn ngữ lập trình số 1 hiện nay. Nó thường được nhắc đến
+                                            như
+                                            một ngôn ngữ lập trình bậc cao
+                                        </p>
+
+                                        <div class="entry-total_review">
+                                            <div class="total">
+                                                <i class="fa fa-users"></i>
+                                                <span class="number"> 1 </span> học sinh
+                                            </div>
+                                            <div class="review">
+                                                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-star"
+                                                    fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd"
+                                                        d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.523-3.356c.329-.314.158-.888-.283-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767l-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288l1.847-3.658 1.846 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.564.564 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z">
+                                                    </path>
+                                                </svg>
+                                                <span class="number">1</span> Đánh giá
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- course end-->
+                            </div>
+                            <div class="col-sm-12 col-md-6  col-lg-3 col-xl-3">
+                                <!-- course -->
+                                <div class="course">
+                                    <div class="img-course">
+                                        <a href="">
+                                            <img src="assets/img/course/courses-2.jpg" class="img-fluid w-100" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="course-content">
+                                        <h3 class="course-name">
+                                            Khóa học java
+                                        </h3>
+                                        <h4 class="course-type">
+                                            Back-end
+                                        </h4>
+                                        <hr class="hr-course">
+                                        <p class="course-detail">
+                                            Java được coi là ngôn ngữ lập trình số 1 hiện nay. Nó thường được nhắc đến
+                                            như
+                                            một ngôn ngữ lập trình bậc cao
+                                        </p>
+
+                                        <div class="entry-total_review">
+                                            <div class="total">
+                                                <i class="fa fa-users"></i>
+                                                <span class="number"> 1 </span> học sinh
+                                            </div>
+                                            <div class="review">
+                                                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-star"
+                                                    fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd"
+                                                        d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.523-3.356c.329-.314.158-.888-.283-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767l-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288l1.847-3.658 1.846 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.564.564 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z">
+                                                    </path>
+                                                </svg>
+                                                <span class="number">1</span> Đánh giá
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- course end-->
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- button change tabs end-->
+            </div>
+        </div>
+        <!-- course end -->
+        <!-- ctv mentor -->
+        <div class="container mt-50">
+            <div class="grid-title mt-5">
+                <h4 class="title-mentor">
+                    Gia sư nổi bật
+                </h4>
+                <a href="" class="title-mentor-link">
+                    Xem tất cả <i class="fa fa-angle-double-right"></i>
+                    </h4>
+            </div>
+        </div>
+        <!-- slider mentor -->
+        <div class="container mt-2">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" style="">
+                        <div class="card-mentor">
+                            <div class="img-mentor-box">
+                                <a href="mentor-detail.html">
+                                    <img src="assets/img/mentor/mentor-1.jpg" alt="" srcset="">
+                                </a>
+                            </div>
+                            <div class="content-card-mentor">
+                                <h3 class="name-mentor"> Nguyễn Thu Hà </h3>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                    <div class="swiper-slide" style="">
+                        <div class="card-mentor">
+                            <div class="img-mentor-box">
+                                <a href="">
+                                    <img src="assets/img/mentor/mentor-1.jpg" alt="" srcset="">
+                                </a>
+                            </div>
+                            <div class="content-card-mentor">
+                                <h3 class="name-mentor"> Nguyễn Thu Hà </h3>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <div class="swiper-slide" style="">
+                        <div class="card-mentor">
+                            <div class="img-mentor-box">
+                                <a href="">
+                                    <img src="assets/img/mentor/mentor-1.jpg" alt="" srcset="">
+                                </a>
+                            </div>
+                            <div class="content-card-mentor">
+                                <h3 class="name-mentor"> Nguyễn Thu Hà </h3>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <div class="swiper-slide" style="">
+                        <div class="card-mentor">
+                            <div class="img-mentor-box">
+                                <a href="">
+                                    <img src="assets/img/mentor/mentor-1.jpg" alt="" srcset="">
+                                </a>
+                            </div>
+                            <div class="content-card-mentor">
+                                <h3 class="name-mentor"> Nguyễn Thu Hà </h3>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <div class="swiper-slide" style="">
+                        <div class="card-mentor">
+                            <div class="img-mentor-box">
+                                <a href="">
+                                    <img src="assets/img/mentor/mentor-1.jpg" alt="" srcset="">
+                                </a>
+                            </div>
+                            <div class="content-card-mentor">
+                                <h3 class="name-mentor"> Nguyễn Thu Hà </h3>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <div class="swiper-slide" style="">
+                        <div class="card-mentor">
+                            <div class="img-mentor-box">
+                                <a href="">
+                                    <img src="assets/img/mentor/mentor-1.jpg" alt="" srcset="">
+                                </a>
+                            </div>
+                            <div class="content-card-mentor">
+                                <h3 class="name-mentor"> Nguyễn Thu Hà </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" style="">
+                        <div class="card-mentor">
+                            <div class="img-mentor-box">
+                                <a href="">
+                                    <img src="assets/img/mentor/mentor-1.jpg" alt="" srcset="">
+                                </a>
+                            </div>
+                            <div class="content-card-mentor">
+                                <h3 class="name-mentor"> Nguyễn Thu Hà </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" style="">
+                        <div class="card-mentor">
+                            <div class="img-mentor-box">
+                                <a href="">
+                                    <img src="assets/img/mentor/mentor-1.jpg" alt="" srcset="">
+                                </a>
+                            </div>
+                            <div class="content-card-mentor">
+                                <h3 class="name-mentor"> Nguyễn Thu Hà </h3>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <div class="swiper-slide" style="">
+                        <div class="card-mentor">
+                            <div class="img-mentor-box">
+                                <a href="">
+                                    <img src="assets/img/mentor/mentor-1.jpg" alt="" srcset="">
+                                </a>
+                            </div>
+                            <div class="content-card-mentor">
+                                <h3 class="name-mentor"> Nguyễn Thu Hà </h3>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <div class="swiper-slide" style="">
+                        <div class="card-mentor">
+                            <div class="img-mentor-box">
+                                <a href="">
+                                    <img src="assets/img/mentor/mentor-1.jpg" alt="" srcset="">
+                                </a>
+                            </div>
+                            <div class="content-card-mentor">
+                                <h3 class="name-mentor"> Nguyễn Thu Hà </h3>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+                <!-- Add Pagination -->
+
+            </div>
+        </div>
+        <!-- slider mentor end  -->
+        <!-- about-us -->
+        <div class="container mt-50">
+            <div class="about-us-main">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                        <div class="img-about-us">
+                            <img src="assets/img/home/tutor-1-02.png" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                        <div class="about-us-content">
+                            <h3 class="entry-about-title">
+                                Giới thiệu
+                            </h3>
+                            <p>
+                                Mentor-X là chương trình đào tạo nguồn lực công nghệ thông tin chất lượng cao, bao
+                                gồm nhiều khoá học: online ngắn hạnn hằm giúp bạn trở thành lập trình
+                                viên chuyên nghiệp trong thời gian ngắn nhất.
+                            </p>
+                            <p>
+                                Chúng tôi phát triển mô hình đào tạo dựa trên phương pháp học mô phỏng môi trường làm
+                                việc
+                                thực tế để tất cả học viên đều “nhập cuộc” nhanh chóng với xu hướng công nghệ đang thay
+                                đổi
+                                từng ngày. Học Với Chuyên Gia đặt mục tiêu đào tạo học viên vững kiến thức, giỏi kỹ
+                                năng,
+                                đáp ứng toàn diện yêu cầu công việc và tự tin chinh phục những nhà tuyển dụng khó tính
+                                nhất.
+                            </p>
+                            <div class="box-btn-about-us">
+                                <a href="contact.html" class="read-more-btn"> Xem thêm </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- about-us end -->
+        <!-- registration to mentor -->
+        <div class="reg-to-mentor-box">
+            <div class="box-reg-grid">
+                <div class="box-left">
+                    <div class="img-reg-to-mentor">
+                        <img src="assets/img/home/intro-pic (1).png" class="img-fluid" alt="">
+                    </div>
+                </div>
+                <div class="box-right">
+                    <div class="text-reg">
+                        <h3> Đăng ký làm gia sư để tham gia vào hệ thống cùng chúng tôi </h3>
+                        <div class="btn-reg-box">
+                            <a href="login-reg-to-mentor.html" class="btn btn-warning">Đăng ký</a>
+                        </div>
+                    </div>
+                    <div class="text-reg">
+                        <h3> Hoặc bạn đã có tài khoản </h3>
+                        <div class="btn-reg-box">
+                            <a href="login-reg-to-mentor.html" class="btn btn-warning">Đăng nhập</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- registration to mentor end -->
+        <!-- blog -->
+        <div class="container">
+            <div class="blog mt-5">
+
+                <div class="row">
+                    <div class="col-xs-3 col-lg-3 col-md-6 col-sm-12">
+                        <!-- simple card -->
+                        <div class="simple-card">
+                            <div class="simple-card-image">
+                                <a href="">
+                                    <img src="assets/img/blog/blog-1.jpg" class="img-fluid w-100" alt="" />
+                                </a>
+                            </div>
+                            <div class="simple-card-content">
+                                <h3 class="simple-card-title">Tin tức mới cập nhật</h3>
+                                <p class="simple-card-desc">
+                                    Các tin tức mới được cập nhật nhanh chóng, liên tục....
+                                </p>
+                                <div class="simple-card-line">
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- simple card end-->
+                    </div>
+                    <div class="col-xs-3 col-lg-3 col-md-6 col-sm-12">
+                        <!-- simple card -->
+                        <div class="simple-card">
+                            <div class="simple-card-image">
+                                <a href="">
+                                    <img src="assets/img/blog/blog-1.jpg" class="img-fluid w-100" alt="" />
+                                </a>
+                            </div>
+                            <div class="simple-card-content">
+                                <h3 class="simple-card-title">Tin tức mới cập nhật</h3>
+                                <p class="simple-card-desc">
+                                    Các tin tức mới được cập nhật nhanh chóng, liên tục....
+                                </p>
+                                <div class="simple-card-line">
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- simple card end-->
+                    </div>
+                    <div class="col-xs-3 col-lg-3 col-md-6 col-sm-12">
+                        <!-- simple card -->
+                        <div class="simple-card">
+                            <div class="simple-card-image">
+                                <a href="">
+                                    <img src="assets/img/blog/blog-1.jpg" class="img-fluid w-100" alt="" />
+                                </a>
+                            </div>
+                            <div class="simple-card-content">
+                                <h3 class="simple-card-title">Tin tức mới cập nhật</h3>
+                                <p class="simple-card-desc">
+                                    Các tin tức mới được cập nhật nhanh chóng, liên tục....
+                                </p>
+                                <div class="simple-card-line">
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- simple card end-->
+                    </div>
+                    <div class="col-xs-3 col-lg-3 col-md-6 col-sm-12">
+                        <!-- simple card -->
+                        <div class="simple-card">
+                            <div class="simple-card-image">
+                                <a href="">
+                                    <img src="assets/img/blog/blog-1.jpg" class="img-fluid w-100" alt="" />
+                                </a>
+                            </div>
+                            <div class="simple-card-content">
+                                <h3 class="simple-card-title">Tin tức mới cập nhật</h3>
+                                <p class="simple-card-desc">
+                                    Các tin tức mới được cập nhật nhanh chóng, liên tục....
+                                </p>
+                                <div class="simple-card-line">
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- simple card end-->
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <!-- blog end -->
+        <!-- footer -->
+        <footer class="mt-5">
+            <div class="container pt-50 pb-50">
+                <div class="row">
+                    <div class="col-xl-3 col-lg-6 col-md-12 col-sm-12">
+                        <h4 class="footer-title">
+                            Thông tin
+                        </h4>
+                        <ul class="footer-list">
+                            <li> <i class="fa fa-map-marker"></i> + Mộ Lao - Hà Đông - Hà Nội </li>
+                            <li> <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-telephone-fill"
+                                    fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M2.267.98a1.636 1.636 0 0 1 2.448.152l1.681 2.162c.309.396.418.913.296 1.4l-.513 2.053a.636.636 0 0 0 .167.604L8.65 9.654a.636.636 0 0 0 .604.167l2.052-.513a1.636 1.636 0 0 1 1.401.296l2.162 1.681c.777.604.849 1.753.153 2.448l-.97.97c-.693.693-1.73.998-2.697.658a17.47 17.47 0 0 1-6.571-4.144A17.47 17.47 0 0 1 .639 4.646c-.34-.967-.035-2.004.658-2.698l.97-.969z" />
+                                </svg> + 0123 456 789 </li>
+                            <li> <i class="fa fa-envelope"></i> + Demo@gmail.com </li>
+                        </ul>
+                    </div>
+                    <div class="col-xl-3 col-lg-6 col-md-12 col-sm-12">
+                        <h4 class="footer-title">
+                            Các dịch vụ
+                        </h4>
+                        <ul class="footer-list">
+                            <li>
+                                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-down-right-square"
+                                    fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M14 1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
+                                    <path fill-rule="evenodd"
+                                        d="M5.172 5.172a.5.5 0 0 1 .707 0l4.096 4.096V6.5a.5.5 0 1 1 1 0v3.975a.5.5 0 0 1-.5.5H6.5a.5.5 0 0 1 0-1h2.768L5.172 5.879a.5.5 0 0 1 0-.707z" />
+                                </svg>
+                                Trở thành gia sư
+                            </li>
+                            <li>
+                                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-down-right-square"
+                                    fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M14 1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
+                                    <path fill-rule="evenodd"
+                                        d="M5.172 5.172a.5.5 0 0 1 .707 0l4.096 4.096V6.5a.5.5 0 1 1 1 0v3.975a.5.5 0 0 1-.5.5H6.5a.5.5 0 0 1 0-1h2.768L5.172 5.879a.5.5 0 0 1 0-.707z" />
+                                </svg>
+                                Đăng ký học
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-xl-3 col-lg-6 col-md-12 col-sm-12">
+                        <h4 class="footer-title">
+                            Site web
+                        </h4>
+                        <ul class="footer-list">
+                            <li><a href="home.html">Trang chủ</a></li>
+                            <li><a href="course.html">Khóa học</a></li>
+                            <li><a href="mentor-list.html">Gia sư</a></li>
+                            <li><a href="blog.html">Tin tức</a></li>
+                            <li><a href="contact.html">Liên hệ</a></li>
+                        </ul>
+
+                    </div>
+                    <div class="col-xl-3 col-lg-6 col-md-12 col-sm-12">
+                        <h4 class="footer-title">
+                            Kết nối với chúng tôi
+                        </h4>
+                        <ul class="footer-list">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7450.523161325157!2d105.78087342671839!3d20.98214906154175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135accdab6f3ae7%3A0x60ddfd85d24b0c52!2zTeG7mSBMYW8sIEjDoCDEkMO0bmcsIEjDoCBO4buZaSwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1604671938527!5m2!1svi!2s"
+                                width="" height="" frameborder="0" style="border:0;" allowfullscreen=""
+                                aria-hidden="false" tabindex="0"></iframe>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="footer-coppyright">
+            <div class="container">
+                <p>
+                    © Copyright 2020 - Mentor X
+                </p>
+            </div>
+
+        </div>
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><svg width="1em" height="1em" viewBox="0 0 16 16"
+                class="bi bi-arrow-up-circle-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                    d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z" />
+            </svg></button>
+        <!-- footer end -->
+        <script src="assets/js/home.js"></script>
+        <script src="assets/js/back-to-top.js"></script>
+        <script src="assets/js/modal-form-login-reg.js"></script>
+    </div>
+    <!-- code finish here -->
+</body>
+
+</html>

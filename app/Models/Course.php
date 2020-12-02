@@ -1,0 +1,16 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class Course extends Model
+{
+    protected $table = "course";
+
+    public function Subject()
+    {
+        return $this->belongsTo('App\Models\Subject', 'id_subject', 'id');
+    }
+}
