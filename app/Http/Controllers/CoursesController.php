@@ -52,8 +52,8 @@ class CoursesController extends Controller
                     <td>' . $Objrow->content . '</td>
                     <td>' . $Objrow->price . '</td>
                     <td>' . $Objrow->sale_price . '</td>
-                <td><a  class=" btn btn-danger btn-sm js-deleteSubject" href="">Xóa</a>
-                <a class="btn btn-danger btn-sm" onclick="event.preventDefault();editSubject(' . $Objrow->id . ');" href="">Sửa</a>
+                <td><a  class=" btn btn-danger btn-sm" onclick="event.preventDefault();deleteCourse(' . $Objrow->id . ');">Xóa</a>
+                <a class="btn btn-danger btn-sm" onclick="event.preventDefault();editCourse(' . $Objrow->id . ');" href="">Sửa</a>
             </td>
                      </tr>';
                 }
@@ -103,8 +103,8 @@ class CoursesController extends Controller
                 <td>' . $Objrow->content . '</td>
                 <td>' . $Objrow->price . '</td>
                 <td>' . $Objrow->sale_price . '</td>
-            <td><a  class=" btn btn-danger btn-sm js-deleteSubject" href="">Xóa</a>
-            <a class="btn btn-danger btn-sm" onclick="event.preventDefault();editSubject(' . $Objrow->id . ');" href="">Sửa</a>
+            <td><a  class=" btn btn-danger btn-sm" onclick="event.preventDefault();deleteCourse(' . $Objrow->id . ');">Xóa</a>
+            <a class="btn btn-danger btn-sm" onclick="event.preventDefault();editCourse(' . $Objrow->id . ');" href="">Sửa</a>
         </td>
                  </tr>';
                 }

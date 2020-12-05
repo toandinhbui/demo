@@ -61,7 +61,7 @@ class ManagersController extends Controller
             <td>' . $value->address . '</td>
             <td>' . $value->phone . '</td>
             <td>' . $value->namerole . '</td>
-            <td><a  class=" btn btn-danger btn-sm js-deleteManager" href="">Xóa</a>
+            <td><a  class=" btn btn-danger btn-sm js-deleteManager" onclick="event.preventDefault();deleteManager(' . $value->id . ');">Xóa</a>
                 <a class="btn btn-danger btn-sm" onclick="event.preventDefault();editManager(' . $value->id . ');" href="">Sửa</a>
             </td>
                  </tr>';
@@ -111,7 +111,7 @@ class ManagersController extends Controller
             <td>' . $value->address . '</td>
             <td>' . $value->phone . '</td>
             <td>' . $value->namerole . '</td>
-            <td><a class=" btn btn-danger btn-sm js-deleteManager" href="">Xóa</a>
+            <td>class=" btn btn-danger btn-sm js-deleteManager" onclick="event.preventDefault();deleteManager(' . $value->id . ');">Xóa</a>
                 <a class="btn btn-danger btn-sm" onclick="event.preventDefault();editManager(' . $value->id . ');" href="">Sửa</a>
             </td>
                  </tr>';

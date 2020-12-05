@@ -201,4 +201,18 @@
         })
     })
 </script>
+<script>
+    function deleteSpecialized(id) {
+        $.ajax({
+            type: 'GET',
+            url: 'deleteSpecialized/' + id,
+        }).done(function(results) {
+            if (results.code == 200) {
+                window.location.reload().delay(10000);
+                toastr.success('', 'Xóa thành công');
+            }
+        }).fail(function(data) {});
+
+    }
+</script>
 @endsection

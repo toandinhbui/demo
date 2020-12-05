@@ -29,7 +29,7 @@ class SpecializedController extends Controller
                     $output .= '<tr>
                     <th>' . $value->id . '</th>
                 <td>' . $value->name . '</td>
-                <td><a  class=" btn btn-danger btn-sm js-deleteSpecialized" href="">Xóa</a>
+                <td><a  class=" btn btn-danger btn-sm js-deleteSpecialized" onclick="event.preventDefault();deleteSpecialized(' . $value->id . ');">Xóa</a>
                 <a class="btn btn-danger btn-sm" onclick="event.preventDefault();editSpecialized(' . $value->id . ');" href="">Sửa</a>
             </td>
                      </tr>';
@@ -62,7 +62,7 @@ class SpecializedController extends Controller
                     $output .= '<tr>
                 <th>' . $value->id . '</th>
             <td>' . $value->name . '</td>
-            <td><a  class=" btn btn-danger btn-sm js-deleteSpecialized" href="">Xóa</a>
+            <td><a  class=" btn btn-danger btn-sm js-deleteSpecialized" onclick="event.preventDefault();deleteSpecialized(' . $value->id . ');">Xóa</a>
             <a class="btn btn-danger btn-sm" onclick="event.preventDefault();editSpecialized(' . $value->id . ');" href="">Sửa</a>
         </td>
                  </tr>';

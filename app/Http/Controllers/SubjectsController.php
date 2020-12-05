@@ -31,7 +31,7 @@ class SubjectsController extends Controller
                     <th>' . $value->id . '</th>
                 <td>' . $value->name . '</td>
                 <td>' . $value->specialized_name . '</td>
-                <td><a  class=" btn btn-danger btn-sm js-deleteSubject" href="">Xóa</a>
+                <td><a  class=" btn btn-danger btn-sm js-deleteSubject" onclick="event.preventDefault();deleteSubject(' . $value->id . ');">Xóa</a>
                 <a class="btn btn-danger btn-sm" onclick="event.preventDefault();editSubject(' . $value->id . ');" href="">Sửa</a>
             </td>
                      </tr>';
@@ -63,7 +63,7 @@ class SubjectsController extends Controller
                     <th>' . $value->id . '</th>
                 <td>' . $value->name . '</td>
                 <td>' . $value->specialized_name . '</td>
-                <td><a  class=" btn btn-danger btn-sm js-deleteSubject" href="">Xóa</a>
+                <td><a  class=" btn btn-danger btn-sm js-deleteSubject" onclick="event.preventDefault();deleteSubject(' . $value->id . ');">Xóa</a>
                 <a class="btn btn-danger btn-sm" onclick="event.preventDefault();editSubject(' . $value->id . ');" href="">Sửa</a>
             </td>
                      </tr>';

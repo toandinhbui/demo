@@ -328,11 +328,9 @@
         $('body').on("click", '.js-deleteManager', function(event) {
             event.preventDefault();
             let URL = $(this).attr('href');
-
             let $this = $(this);
             $.ajax({
                 url: URL,
-
             }).done(function(results) {
                 if (results.code == 200) {
                     $this.parents("tr").remove();
@@ -344,5 +342,19 @@
 
         })
     })
+</script>
+<script>
+    function deleteManager(id) {
+        $.ajax({
+            type: 'GET',
+            url: 'deleteManager/' + id,
+        }).done(function(results) {
+            if (results.code == 200) {
+                window.location.reload().delay(10000);
+                toastr.success('', 'Xóa thành công');
+            }
+        }).fail(function(data) {});
+
+    }
 </script>
 @endsection

@@ -224,4 +224,18 @@
         })
     })
 </script>
+<script>
+    function deleteSubject(id) {
+        $.ajax({
+            type: 'GET',
+            url: 'deleteSubjects/' + id,
+        }).done(function(results) {
+            if (results.code == 200) {
+                window.location.reload().delay(10000);
+                toastr.success('', 'Xóa thành công');
+            }
+        }).fail(function(data) {});
+
+    }
+</script>
 @endsection

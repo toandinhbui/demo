@@ -27,7 +27,7 @@
             <td>{!!$Objrow->content!!}</td>
             <td>{{$Objrow->price}}</td>
             <td>{{$Objrow->sale_price}}</td>
-            <td> <a href="{{ route('ajax_deleteCourse',$Objrow->id) }}" class=" btn btn-danger btn-sm js-deleteCourse">Xóa</a>
+            <td> <a onclick="event.preventDefault();deleteCourse({{ $Objrow->id }});" href="{{ route('ajax_deleteCourse',$Objrow->id) }}" class=" btn btn-danger btn-sm js-deleteCourse">Xóa</a>
                 <a onclick="event.preventDefault();editCourse({{ $Objrow->id }});" href="" class="btn btn-danger btn-sm">Sửa</a>
             </td>
         </tr>
@@ -332,5 +332,19 @@
 
         })
     })
+</script>
+<script>
+    function deleteCourse(id) {
+        $.ajax({
+            type: 'GET',
+            url: 'deletecourses/' + id,
+        }).done(function(results) {
+            if (results.code == 200) {
+                window.location.reload().delay(10000);
+                toastr.success('', 'Xóa thành công');
+            }
+        }).fail(function(data) {});
+
+    }
 </script>
 @endsection
